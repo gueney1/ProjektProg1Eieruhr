@@ -7,16 +7,6 @@ public class Custom extends EggTimer {
 
     @Override
     public String getTimerName() {
-        return "Custom Egg Timer";
-    }
-
-
-
-    @Override
-    public int getTimeInSeconds() {
-        return super.getTimeInSeconds();
-    }
-
-    public void updateTime() {
+        return "Custom Timer";
     }
 }

@@ -27,8 +27,4 @@ public abstract class EggTimer extends Task<Void> {
         seconds = seconds % 60;
         return String.format("%02d:%02d", minutes, seconds);
     }
-
-    protected int getTimeInSeconds() {
-        return 0;
-    }
 }
