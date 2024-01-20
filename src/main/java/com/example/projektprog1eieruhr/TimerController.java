@@ -17,28 +17,28 @@ public class TimerController {
 
 
     @FXML
-    void startGooeyEggTimer(ActionEvent button) {
+    void startGooeyEggTimer(ActionEvent event) {
         GooeyEgg gooeyEgg = new GooeyEgg(300);
         new Thread(gooeyEgg).start();
         gooeyEggLabel.textProperty().bind(gooeyEgg.messageProperty());
     }
 
     @FXML
-    void startHardEggTimer(ActionEvent button) {
+    void startHardEggTimer(ActionEvent event) {
         HardEgg hardEgg = new HardEgg(600);
         new Thread(hardEgg).start();
         hardEggLabel.textProperty().bind(hardEgg.messageProperty());
     }
 
     @FXML
-    void startSoftEggTimer(ActionEvent button) {
+    void startSoftEggTimer(ActionEvent event) {
         SoftEgg softEgg = new SoftEgg(180);
         new Thread(softEgg).start();
         softEggLabel.textProperty().bind(softEgg.messageProperty());
     }
 
     @FXML
-    void startCustomTimer(ActionEvent button) {
+    void startCustomTimer(ActionEvent event) {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Custom Timer");
         dialog.setHeaderText("Enter duration in seconds:");
