@@ -17,7 +17,7 @@ public abstract class EggTimer extends Task<Void> {
     //wird die Zeit in Sekunden runtergespielt/geloopt/gezählt.
     //Am Ende erfolgt eine Textausgabe, um den User darüber zu informieren, dass der Timer abgelaufen ist
     //Der Text wird von einem Warnsignal in Form von eines Alarms begleitet
-    protected Void call() throws Exception {
+    public Void call() throws Exception {
         playStartClickSound();
         for (int i = durationInSeconds; i > 0 && !isCancelled(); i--) {
             updateMessage(formatTime(i));
