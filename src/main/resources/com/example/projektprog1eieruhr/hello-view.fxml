@@ -5,30 +5,30 @@
 <?import javafx.scene.layout.VBox?>
 
 <HBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projektprog1eieruhr.TimerController"
-      style="-fx-padding: 50; -fx-spacing: 50; -fx-background-color: #c2a1a1;">
+      style="-fx-padding: 50; -fx-spacing: 50; -fx-background-color: rgba(58,151,58,0.73);">
 
-    <VBox spacing="50" style="-fx-padding: 15; -fx-border-radius: 5;">
+    <VBox spacing="50" style="-fx-padding: 15; -fx-border-radius: 5; -fx-min-width: 600">
         <Label text="Egg Timer" style="-fx-font-family: 'Arial Black'; -fx-font-size: 38; -fx-text-fill: #0f0f0f;"/>
 
 
         <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5;">
-            <Button text="Start Soft Egg Timer" onAction="#startSoftEggTimer" style="-fx-font-size: 14;" minWidth="200"/>
-            <Label fx:id="softEggLabel" style="-fx-font-size: 14;"/>
+            <Button text="Start Soft Egg Timer" onAction="#startSoftEggTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Label fx:id="softEggLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200"/>
         </HBox>
 
         <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5;">
-            <Button text="Start Hard Egg Timer" onAction="#startHardEggTimer" style="-fx-font-size: 14;" minWidth="200"/>
-            <Label fx:id="hardEggLabel" style="-fx-font-size: 14;"/>
+            <Button text="Start Hard Egg Timer" onAction="#startHardEggTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Label fx:id="hardEggLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200"/>
         </HBox>
 
-        <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5;">
-            <Button text="Start Gooey Egg Timer" onAction="#startGooeyEggTimer" style="-fx-font-size: 14;" minWidth="200"/>
-            <Label fx:id="gooeyEggLabel" style="-fx-font-size: 14;"/>
+        <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5; -fx-min-width: 500">
+            <Button text="Start Gooey Egg Timer" onAction="#startGooeyEggTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Label fx:id="gooeyEggLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200" />
         </HBox>
 
-        <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5;">
-            <Button text="Start Custom Timer" onAction="#startCustomTimer" style="-fx-font-size: 14;" minWidth="200"/>
-            <Label fx:id="customLabel" style="-fx-font-size: 14;"/>
+        <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5; -fx-min-width: 100%">
+            <Button text="Start Custom Timer" onAction="#startCustomTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Label fx:id="customLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200"/>
         </HBox>
     </VBox>
 

@@ -40,7 +40,7 @@ public abstract class EggTimer extends Task<Void> {
     //playAlarm Methode spielt ein Warnsignal ab (am Ende des Timers)
     private void playAlarm() {
         try {
-            String audioFilePath = "C:\\Users\\gnars\\IdeaProjects\\ProjektProg1Eieruhr\\src\\main\\resources\\sound\\alarm.mp3";
+            String audioFilePath = "src/main/resources/betterAlarm.mp3";
             Media media = new Media(new File(audioFilePath).toURI().toString());
             MediaPlayer audio = new MediaPlayer(media);
             audio.play();
@@ -51,7 +51,7 @@ public abstract class EggTimer extends Task<Void> {
     //playStartClickSound spielt beim starten eines Timers
     private void playStartClickSound() {
         try {
-            String audioFilePath = "C:\\Users\\gnars\\IdeaProjects\\ProjektProg1Eieruhr\\src\\main\\resources\\sound\\start.mp3";
+            String audioFilePath = "src/main/resources/start.mp3";
             Media media = new Media(new File(audioFilePath).toURI().toString());
             MediaPlayer audio = new MediaPlayer(media);
             audio.play();
