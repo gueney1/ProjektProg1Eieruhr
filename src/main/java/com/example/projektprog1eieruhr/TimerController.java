@@ -14,12 +14,13 @@ public class TimerController {
     @FXML
     private Label softEggLabel;
 
-    //Event Handler Methoden
-    //Ein Objekt wird zu jedem Timer erstellt
-    //Jedes Objekt bekommt ein Thread zugewiesen
-    //Messgaeproperty wird an EggLabels gebunden, damit Fortschritte in der GUI angezeigt werden
-    //Bei Custom Timer erscheint zusätzlich ein Fenster zum einlesen der Duration in Sekunden
-    //Bei Falschen Eingaben erscheint eine Warnung und der User wird darum gebeten, eine valide Zahl zu geben
+// Event Handler Methoden
+// Ein Objekt wird für jeden Timer erstellt
+// Jedes Objekt bekommt einen Thread zugewiesen
+// Die Message-Property wird an EggLabels gebunden, damit Fortschritte in der GUI angezeigt werden
+// Bei einem benutzerdefinierten Timer erscheint zusätzlich ein Fenster zum Einlesen der Dauer in Sekunden
+// Bei falschen Eingaben erscheint eine Warnung und der Benutzer wird darum gebeten, eine valide Zahl einzugeben
+
     @FXML
     void startGooeyEggTimer(ActionEvent event) {
         EggTimer gooeyEgg = new EggTimer(300) {
