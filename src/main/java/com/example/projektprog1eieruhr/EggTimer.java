@@ -29,7 +29,7 @@ public abstract class EggTimer extends Task<Void> {
         return null;
     }
     //Abstrakte Methode geTimerName gibt den Namen des Timers zurück, der diese Methode aufruft
-    public abstract String getTimerName();
+        public abstract String getTimerName();
 
     //formatTime Methode gibt die Zeit in korrekter Formatierung zurück
     private String formatTime(int seconds) {

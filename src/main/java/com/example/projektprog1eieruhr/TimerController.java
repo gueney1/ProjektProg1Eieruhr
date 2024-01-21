@@ -22,21 +22,36 @@ public class TimerController {
     //Bei Falschen Eingaben erscheint eine Warnung und der User wird darum gebeten, eine valide Zahl zu geben
     @FXML
     void startGooeyEggTimer(ActionEvent event) {
-        GooeyEgg gooeyEgg = new GooeyEgg(300);
+        EggTimer gooeyEgg = new EggTimer(300) {
+            @Override
+            public String getTimerName() {
+                return "Gooey Egg";
+            }
+        };
         new Thread(gooeyEgg).start();
         gooeyEggLabel.textProperty().bind(gooeyEgg.messageProperty());
     }
 
     @FXML
     void startHardEggTimer(ActionEvent event) {
-        HardEgg hardEgg = new HardEgg(600);
+        EggTimer hardEgg = new EggTimer(600) {
+            @Override
+            public String getTimerName() {
+                return "Hard Egg";
+            }
+        };
         new Thread(hardEgg).start();
         hardEggLabel.textProperty().bind(hardEgg.messageProperty());
     }
 
     @FXML
     void startSoftEggTimer(ActionEvent event) {
-        SoftEgg softEgg = new SoftEgg(180);
+        EggTimer softEgg = new EggTimer(180) {
+            @Override
+            public String getTimerName() {
+                return "Soft Egg";
+            }
+        };
         new Thread(softEgg).start();
         softEggLabel.textProperty().bind(softEgg.messageProperty());
     }
@@ -59,7 +74,12 @@ public class TimerController {
                 startCustomTimer(event);
             }
             else {
-                Custom custom = new Custom(customDuration);
+                EggTimer custom = new EggTimer(customDuration) {
+                    @Override
+                    public String getTimerName() {
+                        return "Custom Egg";
+                    }
+                };
                 new Thread(custom).start();
                 customLabel.textProperty().bind(custom.messageProperty());
             }
