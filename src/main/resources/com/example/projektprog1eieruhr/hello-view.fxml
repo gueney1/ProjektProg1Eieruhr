@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <HBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projektprog1eieruhr.TimerController"
-      style="-fx-padding: 50; -fx-spacing: 50; -fx-background-color: rgba(58,151,58,0.73);">
+      style="-fx-padding: 50; -fx-spacing: 50; -fx-background-color: rgba(244,204,204,0.73);">
 
     <VBox spacing="50" style="-fx-padding: 15; -fx-border-radius: 5; -fx-min-width: 600">
         <Label text="Egg Timer" style="-fx-font-family: 'Arial Black'; -fx-font-size: 38; -fx-text-fill: #0f0f0f;"/>
