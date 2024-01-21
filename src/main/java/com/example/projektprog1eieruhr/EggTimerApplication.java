@@ -14,7 +14,7 @@ public class EggTimerApplication extends Application {
             Parent root = loader.load();
             stage.setTitle("Egg Timer");
             stage.setScene(new Scene(root));
-            int fixedSize = 600;
+            int fixedSize = 700;
             stage.setMinHeight(fixedSize);
             stage.setMinWidth(fixedSize);
             stage.setMaxHeight(fixedSize);

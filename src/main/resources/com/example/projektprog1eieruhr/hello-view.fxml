@@ -12,22 +12,22 @@
 
 
         <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5;">
-            <Button text="Start Soft Egg Timer" onAction="#startSoftEggTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Button text="Start Soft Egg Timer" onAction="#startSoftEggTimer" style="-fx-font-size: 14;" minWidth="175"/>
             <Label fx:id="softEggLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200"/>
         </HBox>
 
         <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5;">
-            <Button text="Start Hard Egg Timer" onAction="#startHardEggTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Button text="Start Hard Egg Timer" onAction="#startHardEggTimer" style="-fx-font-size: 14;" minWidth="175"/>
             <Label fx:id="hardEggLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200"/>
         </HBox>
 
         <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5; -fx-min-width: 500">
-            <Button text="Start Gooey Egg Timer" onAction="#startGooeyEggTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Button text="Start Gooey Egg Timer" onAction="#startGooeyEggTimer" style="-fx-font-size: 14;" minWidth="175"/>
             <Label fx:id="gooeyEggLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200" />
         </HBox>
 
         <HBox spacing="20" style="-fx-padding: 15; -fx-border-radius: 5; -fx-min-width: 100%">
-            <Button text="Start Custom Timer" onAction="#startCustomTimer" style="-fx-font-size: 14;" minWidth="150"/>
+            <Button text="Start Custom Timer" onAction="#startCustomTimer" style="-fx-font-size: 14;" minWidth="175"/>
             <Label fx:id="customLabel" style="-fx-font-size: 25; -fx-alignment: center-right" textAlignment="RIGHT" minWidth="200"/>
         </HBox>
     </VBox>
