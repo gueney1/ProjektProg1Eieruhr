@@ -8,7 +8,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class EggTimerApplication extends Application {
-    @Override
     public void start(Stage stage) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
